@@ -15,9 +15,9 @@
     .panel-mid{height:50px;color:white;line-height:50px;font-size:20px;font-weight:bold;margin:0}
     .form{width:100%;height:140px}
     .div1,.div2{width:100%;height:60px;background-color:white;line-height:60px;font-size:0;margin:10px 0}
-    .wrapper1,.wrapper4{width:60px;height:60px;padding:0 10px;text-align:center;float:left}
-    .wrapper2,.wrapper5{width:10px;height:60px;padding:0 4px;text-align:center;float:left}
-    .wrapper3,.wrapper6{width:200px;height:60px;padding:0 10px;text-align:center;float:left}
+    .wrapper-iphone,.wrapper-locked{width:60px;height:60px;padding:0 10px;text-align:center;float:left}
+    .wrapper-line{width:10px;height:60px;padding:0 4px;text-align:center;float:left}
+    .wrapper-num,.wrapper-pw{width:200px;height:60px;padding:0 10px;text-align:center;float:left}
     .iphone,.ver,.locked{vertical-align:middle}
     .text{width:150px;height:40px;vertical-align:middle;border:none;outline:none}
     .button{width:100%;height:50px;background-color:#68cdd5;font-size:20px;color:white}
@@ -33,14 +33,14 @@
 </div>
 <form class="form">
     <div class="div1">
-        <div class="wrapper1"><img class="iphone" src="images/iphone.png"></div>
-        <div class="wrapper2"><img class="ver" src="images/ver.png"></div>
-        <div class="wrapper3"><input class="text" type="text" name="number" placeholder="请输入手机号" /></div>
+        <div class="wrapper-iphone"><img class="iphone" src="images/iphone.png"></div>
+        <div class="wrapper-line"><img class="ver" src="images/ver.png"></div>
+        <div class="wrapper-num"><input class="text" type="text" name="number" placeholder="请输入手机号" /></div>
     </div>
     <div class="div2">
-        <div class="wrapper4"><img class="locked" src="images/locked.png"></div>
-        <div class="wrapper5"><img class="ver" src="images/ver.png"></div>
-        <div class="wrapper6"><input class="text" type="text" name="password" placeholder="请输入密码" /></div>
+        <div class="wrapper-locked"><img class="locked" src="images/locked.png"></div>
+        <div class="wrapper-line"><img class="ver" src="images/ver.png"></div>
+        <div class="wrapper-pw"><input class="text" type="text" name="password" placeholder="请输入密码" /></div>
     </div>
 </form>
 <input class="button" type="submit" value="登录" />
