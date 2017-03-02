@@ -7,11 +7,12 @@
 <style>
     html,body{width:100%;height:100%}
     body{margin:0;padding:0;background-color:#eff0f4}
-    .panel1{width:100%;height:50px;margin:0 auto;text-align:center;background-color:#68cdd5;overflow:hidden}
-    .text1,.text3{height:50px;color:white;line-height:50px;margin:0 15px}
-    .text1{float:left}
-    .text3{float:right}
-    .text2{height:50px;color:white;line-height:50px;font-size:20px;font-weight:bold;margin:0}
+    .panel{width:100%;height:50px;margin:0 auto;text-align:center;background-color:#68cdd5;overflow:hidden}
+    .panel-left,.panel-right{height:50px;color:white;line-height:50px;margin:0 15px}
+    .panel-left{float:left}
+    .panel-left:hover,.panel-right:hover{cursor:pointer}
+    .panel-right{float:right}
+    .panel-mid{height:50px;color:white;line-height:50px;font-size:20px;font-weight:bold;margin:0}
     .form{width:100%;height:140px}
     .div1,.div2{width:100%;height:60px;background-color:white;line-height:60px;font-size:0;margin:10px 0}
     .wrapper1,.wrapper4{width:60px;height:60px;padding:0 10px;text-align:center;float:left}
@@ -20,14 +21,15 @@
     .iphone,.ver,.locked{vertical-align:middle}
     .text{width:150px;height:40px;vertical-align:middle;border:none;outline:none}
     .button{width:100%;height:50px;background-color:#68cdd5;font-size:20px;color:white}
-    .text4{margin:10px;float:right;color:#68cdd5;text-decoration:underline}
+    .problem{margin:10px;float:right;color:#68cdd5;text-decoration:underline}
+    .problem:hover{cursor:pointer}
     .clear{clear:both}
 </style>
 <body>
-<div class="panel1">
-    <p class="text1">注册</p>
-    <p class="text3">关闭</p>
-    <p class="text2">登录</p>
+<div class="panel">
+    <p class="panel-left">注册</p>
+    <p class="panel-right">关闭</p>
+    <p class="panel-mid">登录</p>
 </div>
 <form class="form">
     <div class="div1">
@@ -42,7 +44,7 @@
     </div>
 </form>
 <input class="button" type="submit" value="登录" />
-<p class="text4">忘记密码</p>
+<p class="problem">忘记密码</p>
 <div class="clear"></div>
 </body>
 </html>
