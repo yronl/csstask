@@ -5,36 +5,75 @@
     <title>task5</title>
 </head>
 <style>
+ html,body{width:100%;height:100%;margin: 0;padding: 0}
+.header{height:50px;background-color:#68cdd5;text-align: center;vertical-align: middle}
+.back{float:left;margin:0 20px}
+.title{margin:0}
+.back,.title{height:50px;color:white;line-height:50px;font-size:20px;font-weight:bold}
+.top-div{width: 100%;display:flex;justify-content:flex-start;align-items:center;background-image:url(images5/nur-bg.png);background-size: cover}
+.por{}
+.top-div-in{display: flex;flex-direction:column;justify-content: flex-start}
+.location{display: flex;justify-content: flex-start}
+.name,.address{margin:0}
+.bottom-div{width:100%}
+.list-title,.list{display:flex;justify-content:flex-start;width:100%;border-bottom: 1px solid black}
+.list{}
+.list-item{flex-shrink: 0}
+.footer{width: 100%;position: fixed;bottom: 0;display:flex;justify-content: space-between}
+.button-left,.button-right{width:49%;line-height:50px;margin:10px;background-color: #68cdd5;border-radius:5px;border:none}
 
-.top-pan{background-image:url(images5/nur-bg.png);background-repeat:no-repeat}
-.top-pan-in1{}
 </style>
 <body>
-<header class="ht">
-<h class="t1"><</h>
-<h class="t2">个人主页</h>
+<header class="header">
+    <p class="back"><</p>
+    <p class="title">个人主页</p>
 </header>
-<div class="top-pan">
-<div class="top-pan-in1">
-<img class="por" src="images5/portrait.png" />
+<div class="top-div">
+    <img class="por" src="images5/portrait.png" />
+    <div class="top-div-in">
+        <p class="name">猪头三</p>
+        <div class="location">
+            <img class="ori" src="images5/orientate.png" />
+            <p class="address">花果山.水帘洞</p>
+        </div>
+    </div>
 </div>
-
-<div class="top-pan-in2">
-<p class="p1">猪头三</p>
-<div class="inner>
-<img class="or" src="images5/orientate.png" />
-<p class="p2">花果山.水帘洞</p>
+<div class="bottom-div">
+    <div class="list-title">
+        <img class="ver-line-blue" src="images5/ver-line-blue.png" />
+        <p class="skill">专业技能</p>
+    </div>
+    <div class="list">
+        <img class="star" src="images5/star.png" />
+        <p class="personal">住家</p>
+        <img class="star" src="images5/star.png" />
+        <p class="personal">不含餐</p>
+    </div>
+    <div class="list">
+        <p class="list-item">从业年限</p>
+        <img class="line-separate" src="images5/ver-line.png" />
+        <p class="work-age">0~3年</p>
+    </div>
+    <div class="list">
+        <p class="list-item">工作时间</p>
+        <img class="line-separate" src="images5/ver-line.png" />
+        <p class="hours">全天</p>
+    </div>
+    <div class="list">
+        <p class="list-item">服务价格</p>
+        <img class="line-separate" src="images5/ver-line.png" />
+        <p class="charge">25元/小时</p>
+    </div>
+    <div class="list">
+        <p class="list-item">自我介绍</p>
+        <img class="line-separate" src="images5/ver-line.png" />
+        <p class="self-introduce">可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人</p>
+    </div>
 </div>
-</div>
-
-
-
-<div class="bot-pan">
-
-</div>
-<footer class="f">
-<button class="b1">留言</button>
-<button class="b2">电话联系</button>
+<footer class="footer">
+    <button class="button-left">留言</button>
+    <button class="button-right">电话联系</button>
 </footer>
+<div class="clear"></div>
 </body>
 </html>
