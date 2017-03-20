@@ -10,7 +10,7 @@
 </head>
 <style>
  html,body{width:100%;height:100%;max-width:700px;margin: 0 auto;padding: 0}
-.header{width:100%;height:50px;padding:0 15px;background-color:#68cdd5;display: flex;justify-content: space-between;align-items: center}
+.header{width:100%;height:50px;top:0;padding:0 15px;background-color:#68cdd5;display: flex;justify-content: space-between;align-items: center}
 .empty{width:42px;height:50px;}
 .h-btn-group{border:none;display: flex;justify-content: center;margin:0;background-color:#55a8b3;border-radius: 8px}
 .h-btn-group>button{background-color:#ffffff;color:#68cdd5;border-radius: 8px;border:none;outline-style:none}
@@ -23,14 +23,14 @@ div.container div.row div:first-child{border-left-width:0}
  .btn-group{width:100%;border:none;border-radius:0;margin:0;padding:0;}
  div.btn-group button{width:100%;border:none;border-radius:0;padding:15px 0;}
 .caret{position:absolute;top:50%;right:0;margin-right:15px;}
-
+.dropdown-menu{width:100%;}
 .list-group-item{border-left-width:0;border-right-width:0;}
-.list-group-in{list-style-type: none;padding:0;}
+.list-group-in{list-style-type: none;padding:0;background: url("images6/sprite1.png") no-repeat;}
 .list-group-item-in{line-height:25px;}
-.list-group-item-in>span:first-child{float:left;width:24px;height:24px;background: url(images6/sprite1.png) no-repeat;overflow: hidden;}
-.a1{background-position: 0 24px;}
-.a2{background-position: 0 48px;}
-.a3{background-position: 0 72px;}
+.list-group-item-in>span:first-child{width:24px;height:24px;float:left;}
+.a1{background-position: 0 0;}
+.a2{background-position: 0 -24px;}
+.a3{background-position: 0 -48px;}
 .charge{float:right;color:red;}
 .right-arrow{float:right;margin-top:-6px;}
 .date,.address{color:#bebec3;line-height:25px;}
@@ -122,49 +122,49 @@ div.container div.row div:first-child{border-left-width:0}
 
   <li class="list-group-item">
 <ul class="list-group-in">
-  <li class="list-group-item-in"><span class="date">服务日期</span></li>
-  <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">35元/小时</span></li>
-  <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+  <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+  <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">35元/小时</span></li>
+  <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
 </ul>
 </li>
 
   <li class="list-group-item">
 <ul class="list-group-in">
-  <li class="list-group-item-in"><span class="date">服务日期</span></li>
-  <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
-  <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+  <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+  <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
+  <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
 </ul>
 </li>
 
   <li class="list-group-item">
 <ul class="list-group-in">
-  <li class="list-group-item-in"><span class="date">服务日期</span></li>
-  <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
-  <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+  <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+  <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
+  <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
 </ul>
 </li>
 
   <li class="list-group-item">
 <ul class="list-group-in">
-  <li class="list-group-item-in"><span class="date">服务日期</span></li>
-  <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
-  <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+  <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+  <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
+  <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
 </ul>
 </li>
 
     <li class="list-group-item">
         <ul class="list-group-in">
-            <li class="list-group-item-in"><span class="date">服务日期</span></li>
-            <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
-            <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+            <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+            <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
+            <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
         </ul>
     </li>
 
     <li class="list-group-item">
         <ul class="list-group-in">
-            <li class="list-group-item-in"><span class="date">服务日期</span></li>
-            <li class="list-group-item-in">2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
-            <li class="list-group-item-in"><span class="address">北京.通州.果园</span></li>
+            <li class="list-group-item-in"><span class="a1"></span><span class="date">服务日期</span></li>
+            <li class="list-group-item-in"><span class="a2"></span>2015-7-5至2015-7-12<img src="images6/right-arrow.png" class="right-arrow" /><span class="charge">45元/小时</span></li>
+            <li class="list-group-item-in"><span class="a3"></span><span class="address">北京.通州.果园</span></li>
         </ul>
     </li>
 </ul>
