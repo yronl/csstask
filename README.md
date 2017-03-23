@@ -6,3 +6,4 @@ The third task is making a magic mirror html,which can suit various devices of d
 The fourth task is making a sign-in html,which can suit various devices of different ratio.
 The fifth task is a page of a nurse's self-introduction.
 The sixth task is a page about the recruitment information of employers.
+The seventh task is making three pages of a web-app for a game.
