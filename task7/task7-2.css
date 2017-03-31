@@ -128,55 +128,115 @@ html, body {
 
         .hidden-div {
             width: 132px;
-            display: flex;
-            justify-content: center;
+            height:30px;
             visibility: hidden;
             margin:0 auto;
+            background: url("images7/sprites7-l.png") no-repeat;
         }
 
         @media screen and (max-width: 550px){
             .hidden-div{
                 width:112px;
+                height:25px;
+                background: url("images7/sprites7-m.png") no-repeat;
             }
         }
         @media screen and (max-width: 450px){
             .hidden-div{
                 width:92px;
+                height:20px;
+                background: url("images7/sprites7-s.png") no-repeat;
             }
         }
         @media screen and (max-width: 370px){
             .hidden-div{
                 width:76px;
+                height:16px;
+                background: url("images7/sprites7-mini.png") no-repeat;
             }
         }
 
-        .mini {
+        .hidden-div span{
+            width:30px;
+            height:30px;
             margin-left: 4px;
         }
-
         @media screen and (max-width: 550px){
-            .mini{
+            .hidden-div span{
                 width:25px;
                 height:25px;
             }
         }
         @media screen and (max-width: 450px){
-            .mini{
+            .hidden-div span{
                 width:20px;
                 height:20px;
             }
         }
         @media screen and (max-width: 370px){
-            .mini{
-                width:16px;
-                height:16px;
+            .hidden-div span{
+                width:25px;
+                height:25px;
             }
         }
 
-        .hidden-div > img:first-child {
-            margin-left: 0;
+        .mini1 {
+            background-position: 0 0;
         }
-
+        .mini2 {
+            background-position: -34px 0;
+        }
+        @media screen and (max-width: 550px){
+            .mini2{
+                background-position: -29px 0;
+            }
+        }
+        @media screen and (max-width: 450px){
+            .mini2{
+                background-position: -24px 0;
+            }
+        }
+        @media screen and (max-width: 370px){
+            .mini2{
+                background-position: -20px 0;
+            }
+        }
+        .mini3 {
+            background-position: -68px 0;
+        }
+        @media screen and (max-width: 550px){
+            .mini3{
+                background-position: -58px 0;
+            }
+        }
+        @media screen and (max-width: 450px){
+            .mini3{
+                background-position: -48px 0;
+            }
+        }
+        @media screen and (max-width: 370px){
+            .mini4{
+                background-position: -40px 0;
+            }
+        }
+        .mini4 {
+            background-position: -102px 0;
+        }
+        @media screen and (max-width: 550px){
+            .mini4{
+                background-position: -87px 0;
+            }
+        }
+        @media screen and (max-width: 450px){
+            .mini4{
+                background-position: -72px 0;
+            }
+        }
+        @media screen and (max-width: 370px){
+            .mini4{
+                background-position: -60px 0;
+            }
+        }
         .col-xs-4:hover .hidden-div {
             visibility: visible;
         }
