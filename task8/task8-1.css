@@ -1,0 +1,232 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*页眉*/
+header{
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 80px;
+}
+header span:first-child{
+    color:#69c199;
+}
+header div{
+    width:117px;
+    height:28px;
+    background: url(images8/sprites8.png) no-repeat;
+}
+.we-chat{
+    background-position: 0 0;
+}
+.qq{
+    background-position: -44px 0;
+}
+.sina{
+    background-position: -88px 0;
+}
+
+/*主体*/
+.main{
+    width:100%;
+    margin-bottom: 100px;
+}
+/*导航栏*/
+.main>ul{
+    margin:0;
+    padding: 0 80px;
+    background-color:#29b078 ;
+}
+.main>ul li{
+    float:right;
+}
+.main div.tab-content{
+    width:100%;
+}
+/*首页*/
+.head-main{
+    width:100%;
+    background-color: #fafafa;
+}
+/*轮播图*/
+#carousel-example-generic>.carousel-inner>div{
+    width:100%;
+    height:300px;
+    background-image: url(images8/head-background.png);
+}
+.question{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height:300px;
+    margin:0 15%;
+}
+.question span:first-child{
+    color:white;
+    font-size: 30px;
+}
+.question p.em span {
+    color:white;
+    font-size: 60px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+.em{
+    color:white;
+    font-size: 45px;
+}
+
+/*三大优点以及人数统计*/
+.container{
+    width:100%;
+    padding: 0;
+}
+.row{
+    width:100%;
+    margin: 0;
+    padding: 40px 80px;
+}
+.col-xs-3{
+    text-align: left;
+}
+.in{
+    text-align: center;
+}
+.in>span{
+    display:block;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.in+span{
+    color:#999999;
+}
+.counting{
+    border-left:1px solid #dedede;
+}
+.learning,.job-find{
+    margin:20px auto;
+}
+.count span{
+    color:#69c199;
+    margin-left: 10px;
+}
+.count+span{
+    color:#999999;
+}
+
+/*如何学习*/
+.col-xs-12{
+    padding:20px 0;
+}
+.col-xs-12>span{
+    font-size: 20px;
+}
+.learning-steps .col-xs-3{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.wrapper{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.circle{
+    width:75px;
+    height:75px;
+    background-image: url(images8/process-icon.png);
+    text-align: center;
+    line-height: 75px;
+    color:#29b078;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.circle+span{
+    color:#cacaca;
+}
+.wrapper+span{
+    display:block;
+    flex-shrink:0;
+    margin-left: 20px;
+}
+
+/*优秀学员展示*/
+.col-xs-12.carousel.slide{
+    padding-bottom: 60px;
+}
+.col-xs-12.carousel.slide .row{
+    padding:0;
+}
+.col-xs-12.carousel.slide>.carousel-indicators li{
+    background-color: white;
+    z-index: 1;
+}
+.col-xs-12.carousel.slide>.carousel-indicators li.active {
+    background-color: #29bde0;
+}
+.person-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.person-show img{
+    display: block;
+    flex-shrink: 0;
+}
+.job-name{
+    display: block;
+    font-size: 20px;
+}
+.job-name+span{
+    color:#bfbfbf;
+}
+
+/*战略合作企业*/
+
+.co-company{
+    width:100%;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-wrapper{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:19%;
+    height:200px;
+    background-color: white;
+}
+
+/*友情链接*/
+
+.link-to{
+    width:100%;
+    margin:0 auto;
+}
+.mobile-software,.recruit,.find-job{
+    list-style-type: disc;
+}
+
+/*页脚*/
+
+footer{
+    width:100%;
+    height:100px;
+    padding:20px 80px;
+    background-color: #26a26f;
+    position:fixed;
+    bottom:0;
+    z-index: 2;
+}
