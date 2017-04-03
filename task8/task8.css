@@ -3,6 +3,7 @@ html,body{
     height: 100%;
     margin: 0 auto;
     padding: 0;
+    clear:both;
 }
 
 /*页眉*/
@@ -12,7 +13,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 80px;
+    padding:0 10%;
 }
 header span:first-child{
     color:#69c199;
@@ -35,11 +36,12 @@ header div{
 /*主体*/
 .main{
     width:100%;
+    background-color: #e3e0e0;
 }
 /*导航栏*/
 .main>ul{
     margin:0;
-    padding: 0 15%;
+    padding: 0 10%;
     background-color:#29b078 ;
 }
 .main>ul li:first-child{
@@ -54,13 +56,15 @@ header div{
 }
 .main>ul li:hover a{
     background-color: #29b078 ;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
+    box-sizing:border-box;
 }
 .main>ul li a{
+    height:90px;
     line-height: 64px;
     color:white;
-    background-color: #29b078 ;
     border: none;
+    border-radius: 0;
     margin: 0;
 }
 .main div.tab-content{
@@ -74,31 +78,11 @@ header div{
 /*轮播图*/
 #carousel-example-generic>.carousel-inner>div{
     width:100%;
-    height:300px;
-    background-image: url(images8/head-background.png);
+    padding:15%;
+    background: url(images8/head-background.png) no-repeat;
+    background-size: cover;
 }
-.question{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height:300px;
-    margin:0 15%;
-}
-.question span:first-child{
-    color:white;
-    font-size: 30px;
-}
-.question p.em span {
-    color:white;
-    font-size: 60px;
-    margin-right: 5px;
-    margin-top: 0;
-}
-.em{
-    color:white;
-    font-size: 45px;
-}
+
 
 /*三大优点以及人数统计*/
 .container{
@@ -110,9 +94,16 @@ header div{
     margin: 0;
     padding: 40px 80px;
 }
-.col-xs-3{
+.head-main .col-md-3{
     text-align: left;
 }
+
+@media screen and(max-width:992px){
+    .head-main .container .row .col-xs-12{
+        text-align: center;
+    }
+}
+
 .in{
     text-align: center;
 }
@@ -139,10 +130,10 @@ header div{
 }
 
 /*如何学习*/
-.col-xs-12{
+.learning-steps .col-xs-12{
     padding:20px 0;
 }
-.col-xs-12>span{
+.learning-steps .col-xs-12>span{
     font-size: 20px;
 }
 .learning-steps .col-xs-3{
@@ -180,7 +171,7 @@ header div{
 
 /*优秀学员展示*/
 .col-xs-12.carousel.slide{
-    padding-bottom: 80px;
+    padding:0 0 80px 0;
 }
 .col-xs-12.carousel.slide .row{
     padding:0;
@@ -192,12 +183,17 @@ header div{
 .col-xs-12.carousel.slide>.carousel-indicators li.active {
     background-color: #29bde0;
 }
+.show-title{
+    padding: 20px 0;
+    font-size: 20px;
+}
 .person-show{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
+    padding:20px;
 }
 .person-show img{
     display: block;
@@ -245,22 +241,28 @@ header div{
 
 /*职业内容*/
 .job-main{
-    width:100%;
+    padding: 0 80px 300px 80px;
+    background-color: #fafafa;
+
 }
 .job-title{
-    padding: 30px 15%;
+    padding: 30px 0;
     color:#26a26f;
     font-size: 20px;
     text-align: left;
     border-bottom: 1px solid #d4cfcf;
 }
 .job-classify{
+    padding:0;
+}
+.job-classify ul{
+    width: 100%;
     display: inline-block;
-    padding: 20px 15%;
+    float: left;
+    padding: 20px 0;
     margin: 0;
     list-style-type: none;
     text-align: left;
-    float: left;
     border-bottom: 1px solid #26a26f;
 }
 .job-classify li{
@@ -279,8 +281,262 @@ header div{
 .job-classify li a:hover{
     background-color: #26a26f;
 }
+.wrapper-inner-title{
+    text-align: left;
+    border-bottom: 1px solid #d4cfcf;
+    margin-bottom: 30px;
+    padding: 30px 0;
+}
+.portrait-wrapper{
+    display: inline-block;
+    float:left;
+    width:120px;
+    height:120px;
+    background: url(images8/job-portrait.png) no-repeat;
+    background-size: cover;
+}
+.job-main .col-xs-4{
+    margin:20px 0;
+}
+.per-row-first{
+    padding-left: 0;
+    float:left;
+}
+.per-row-last{
+    padding-right: 0;
+    float:right;
+}
+.job-intro{
+    position: relative;
+    padding: 10px 0 0 0;
+    background-color: white;
+    border:1px solid #d4cfcf;
+}
+.job-intro>.col-xs-5:first-child{
+    padding: 0 0 0 10px;
+    border:none;
+}
+.col-xs-7{
+    padding: 0;
+    border-left:1px solid #d4cfcf;
+}
+.job-detail{
+    padding: 10px;
+    text-align: left;
+    border-left:none;
+}
+.a-l{
+    border-left:1px solid #d4cfcf;
+}
+.col-xs-6{
+    padding: 10px 10px;
+    text-align: left;
+    border-top:1px solid #d4cfcf;
+}
+.red-star,.em-red{
+    margin-left: 10px;
+}
+.em-red,.em-red-last{
+    color:red;
+}
+.col-xs-5{
+    padding: 10px 10px;
+    text-align: center;
+}
 
+.inner-title{
+    font-size: 20px;
+}
+.job-detail-title{
+    display: inline-block;
+    margin:5px 0 20px 0;
+    font-size: 20px;
+}
+.job-detail>span{
+    line-height: 25px;
+}
+.a-t{
+    border-top:1px solid #d4cfcf;
+}
+.a-b{
+    border-bottom:1px solid #d4cfcf;
+}
+.col-xs-12.a-t,.col-xs-12.a-b{
+    padding:0;
+}
+.salary-intro{
+    padding: 0;
+}
+.salary-intro>.col-xs-5{
+    border:none;
+}
+.salary{
+    float: right;
+    padding: 10px 10px;
+    text-align: right;
+    border-left:1px solid #d4cfcf;
+}
+.salary span:first-child{
+    float:left;
+}
+.study-num{
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 20px;
+}
+.study-tip{
+    padding: 10px 10px;
+    text-align: left;
+    border-top:1px solid #d4cfcf;
+}
 
+/*动画显示*/
+.cartoon{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    padding : 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    background: rgba(20, 20, 20, 0.6);
+    border:1px solid black;
+    visibility: hidden;
+}
+@keyframes myfirst{
+    0%   {background: rgba(20, 20, 20, 0);}
+    25%  {background: rgba(20, 20, 20, 0.2);}
+    50%  {background: rgba(20, 20, 20, 0.4);}
+    100% {background: rgba(20, 20, 20, 0.6);}
+
+}
+.job-intro:hover .cartoon{
+    animation: myfirst 4s;
+    visibility: visible;
+}
+.cartoon-title{
+    display: inline-block;
+    font-size: 20px;
+    margin:20px 0;
+}
+.cartoon p{
+    text-align: left;
+    text-indent: 2em;
+    line-height: 25px;
+}
+
+/*推荐内容*/
+
+.recommend{
+    width:100%;
+    padding:10%;
+    background: url(images8/recommend.png) no-repeat;
+    background-size: cover;
+}
+.rec-intro{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin:0 20px;
+}
+.rec-intro span{
+    color:white;
+}
+.span-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 20px;
+}
+.span-wrapper>span:first-child{
+    font-size: 30px;
+}
+.em{
+    font-size: 50px;
+}
+
+/*合作企业*/
+.intro-main{
+    padding: 0 10%;
+    background-color: #fafafa;
+}
+.intro-main>.col-xs-12{
+    padding: 0;
+}
+.intro-title{
+    font-size: 20px;
+    text-align: left;
+    width:100%;
+    padding:20px 0;
+}
+.em-color{
+    color:#72c49e;
+}
+.div-left{
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    text-align: center;
+    padding: 0;
+}
+.div-left>.col-xs-12{
+    padding: 10px;
+    border-bottom: 1px solid #cfcece;
+}
+.div-left>.col-xs-12>span{
+    font-size: 20px;
+}
+.div-left>.col-xs-6{
+    padding: 20px 0;
+    border:none;
+}
+.intro-list{
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    line-height: 25px;
+}
+.intro-list a{
+    display: block;
+    color:#29b078;
+    text-decoration: none;
+}
+.intro-list a:hover{
+    color:#ff650e;
+    text-decoration: none;
+}
+.intro-list a:hover .mini-cir{
+    background-color:#f4803d;
+}
+.mini-cir{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border:1px solid #ff640c;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.intro-main>.col-xs-8{
+    padding: 0 0 0 40px;
+    margin-bottom: 200px;
+}
+.div-right{
+    display: inline-block;
+    background-color: white;
+    padding: 20px 30px;
+}
+.div-right img{
+    display: inline-block;
+    float:left;
+    margin:0 15px 15px 0;
+}
+.div-right p{
+    text-align: left;
+    text-indent: 2em;
+    line-height: 25px;
+}
 
 /*网站信息*/
 
@@ -304,6 +560,9 @@ table caption{
 .jnshu td{
     padding: 0 10px;
     border-left: 1px solid white;
+}
+.jnshu td a:hover{
+    text-decoration: none;
 }
 .jnshu td:first-child{
      border:none;

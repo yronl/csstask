@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<script src="bootstrap/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<html>
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;" charset="UTF-8">
+    <title>task7-head</title>
+</head>
+<style>
+
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        max-width: 770px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 62.5%;
+    }
+    @media screen and (max-width:450px){
+        html,body{font-size:50%;}
+    }
+    @media screen and (max-width:400px){
+        html,body{font-size:30%;}
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        background-color: #29bde0;
+    }
+
+    .content {
+        margin: 13px 10px;
+    }
+
+    .main-box {
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 20px 30px 40px 30px;
+        margin: 0;
+    }
+
+    .history {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0;
+        background-color: #ffffff;
+    }
+
+    .empty {
+        width: 24px;
+        height: 40px;
+    }
+    .history span{
+        font-size: 2.5rem;;
+        color: #9a9a9a;
+        margin: 0;
+    }
+    @media screen and (max-width:400px){
+        .history span{font-size:3rem;}
+    }
+
+    .game-info {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+        background-color: #ffffff;
+    }
+
+    .game-name {
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #fde1ae;
+    }
+
+    .game-name span {
+        font-size: 2.5rem;
+        line-height: 60px;
+        color: #fbb435;
+    }
+
+    .version-list {
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 4;
+    }
+
+    .version-list button {
+        height: 90px;
+        margin-top: 16px;
+        flex-grow: 1;
+        font-size: 2.5rem;
+    }
+
+    .version-list span {
+        padding-top: 16px;
+        margin: 0 auto;
+        flex-grow: 1;
+        font-size: 2rem;
+        color: #9a9a9a;
+    }
+
+    .carousel.slide {
+        position: relative;
+    }
+
+    .carousel-indicators {
+        width: 100%;
+        height: 30px;
+        margin: -60px auto;
+        position: absolute;
+        left: 0;
+    }
+
+    .carousel-indicators li {
+        background-color: #bebec3;
+    }
+
+    .carousel-indicators li.active {
+        background-color: #29bde0;
+    }
+
+    .triangle {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 0;
+        position: absolute;
+        top: 264px;
+        right: 10px;
+    }
+    @media screen and (max-width:450px){
+        .triangle{position: absolute;
+            top: 27rem;
+            right: 1rem;}
+    }
+    @media screen and (max-width:400px){
+        .triangle{position: absolute;
+            top: 26rem;
+            right: 1rem;}
+    }
+</style>
+<body>
+<header class="header">
+    <img class="content" src="images7/first-content.png" />
+</header>
+<div class="main-box">
+    <div class="history">
+        <div class="empty"></div>
+        <span>上次游戏：捉鬼猜词版</span>
+        <img class="arrow" src="images7/arrow.png" />
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="game-info">
+                        <div class="game-name">
+                            <span>捉鬼游戏</span>
+                        </div>
+                        <div class="version-list">
+                            <button type="button" class="btn btn-info">简化版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">猜词版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">白痴版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="game-info">
+                        <div class="game-name">
+                            <span>捉鬼游戏</span>
+                        </div>
+                        <div class="version-list">
+                            <button type="button" class="btn btn-info">简化版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">猜词版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">白痴版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="game-info">
+                        <div class="game-name">
+                            <span>捉鬼游戏</span>
+                        </div>
+                        <div class="version-list">
+                            <button type="button" class="btn btn-info">简化版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">猜词版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">白痴版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="game-info">
+                        <div class="game-name">
+                            <span>捉鬼游戏</span>
+                        </div>
+                        <div class="version-list">
+                            <button type="button" class="btn btn-info">简化版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">猜词版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                            <button type="button" class="btn btn-info">白痴版</button>
+                            <span>有1133个用户正在玩此款游戏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="triangle">
+            <img class="next-page" src="images7/triangle-next.png" />
+        </div>
+    </div>
+</div>
+</body>
+</html>
