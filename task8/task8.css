@@ -44,69 +44,71 @@ header div{
     background-color: #e3e0e0;
 }
 /*导航栏*/
-.main>ul{
-    margin:0;
+
+.screen-nav {
+    background-color: #29b078;
+    margin: 0;
     padding: 0 10%;
-    background-color:#29b078 ;
 }
-@media screen and (max-width: 500px){
-    .main>ul{
-        display:none;
+@media screen and (max-width: 768px){
+    .screen-nav{
+        padding: 0;
     }
 }
-.main>ul li:first-child{
-    float:left;
+.screen-nav .container-fluid{
+    padding: 0;
+}
+.screen-nav>.container-fluid>.navbar-header{
+    margin: 0;
+}
+.nav-ul{
+    float: right;
+    margin: 0;
+}
+@media screen and (max-width: 767px){
+    .nav-ul{
+        float: none;
+        text-align: center;
+    }
 }
 .nav-img{
-    display: inline-block;
-    margin:10px 0;
+    margin-top: 3px;
+    margin-left: 0;
 }
-.main>ul li{
-    float:right;
-}
-.main>ul li:hover a{
-    background-color: #29b078 ;
-    border-bottom: 5px solid white;
-    box-sizing:border-box;
-}
-.main>ul li a{
-    height:90px;
-    line-height: 64px;
-    color:white;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-}
-.main div.tab-content{
-    width:100%;
-}
-
-/*小屏幕导航栏*/
-.min-screen-nav{
-    display: none;
-    margin: 0;
-}
-@media screen and (max-width: 500px){
-    .min-screen-nav{
-        display:block;
+@media screen and (max-width: 768px){
+    .nav-img{
+        margin-left: 10%;
     }
 }
-.panel-default{
-    background-color: #29b078;
+@media screen and (max-width: 500px){
+    .nav-img{
+        margin-left: 15px;
+    }
 }
-.panel-default>.panel-heading{
-    border-radius: 0;
-    background-color: #29b078;
+.nav-ul li a{
+    height: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white !important;
+    background-color: #29b078 !important;
+    box-sizing: border-box;
 }
-.panel-title{
-    text-align: right;
+.nav-ul li:hover a{
+    border-bottom: 3px solid white;
 }
-.min-screen-nav a{
-    text-decoration: none;
-    color:white;
+.nav-btn{
+    margin:18px 0;
+    float: right;
 }
-.fold{
-    text-align: right;
+@media screen and (max-width: 768px){
+    .nav-btn{
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav-btn{
+        margin-right: 15px;
+    }
 }
 
 
@@ -134,26 +136,13 @@ header div{
     width:100%;
     padding: 0;
 }
-.row{
-    width:100%;
-    margin: 0;
-    padding: 40px 80px;
-}
-.row-fit{
-    width:100%;
-    margin: 0;
-    padding: 30px 80px;
-}
-@media screen and (max-width:768px){
-    .row-fit{
-        padding: 40px 20px;
-    }
-}
 .advantage{
     text-align: left;
     line-height: 25px;
 }
-
+.row-fit{
+    padding: 30px 10%;
+}
 @media screen and (max-width:992px){
     .advantage{
         text-align: center;
@@ -201,6 +190,7 @@ header div{
     font-size: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
 }
 .steps{
     height:80px;
@@ -266,6 +256,7 @@ header div{
     padding: 20px 0;
     font-size: 20px;
     margin-bottom:30px;
+    text-align: center;
 }
 .person-show{
     display: flex;
@@ -566,9 +557,6 @@ header div{
     padding: 0 10%;
     background-color: #fafafa;
 }
-.intro-main>.col-xs-12{
-    padding: 0;
-}
 .intro-title{
     font-size: 20px;
     text-align: left;
@@ -579,26 +567,22 @@ header div{
     color:#72c49e;
 }
 .div-left{
+    width: 100%;
     display: inline-block;
     vertical-align: top;
     background-color: white;
     text-align: center;
-    padding: 0;
+    margin-bottom: 40px;
 }
-.div-left>.col-xs-12{
+.intro-title-in {
     padding: 10px;
     border-bottom: 1px solid #cfcece;
-}
-.div-left>.col-xs-12>span{
     font-size: 20px;
 }
-.div-left>.col-xs-6{
-    padding: 20px 0;
-    border:none;
-}
 .intro-list{
-    padding: 0;
-    list-style-type: none;
+    display: inline-block;
+    width:92px;
+    margin: 20px auto;
     text-align: left;
     line-height: 25px;
 }
@@ -622,14 +606,11 @@ header div{
     border-radius: 10px;
     margin-right: 10px;
 }
-.intro-main>.col-xs-8{
-    padding: 0 0 0 40px;
-    margin-bottom: 200px;
-}
 .div-right{
     display: inline-block;
     background-color: white;
-    padding: 20px 30px;
+    padding: 10px 20px;
+    margin: 0 0 100px 0;
 }
 .div-right img{
     display: inline-block;
@@ -659,7 +640,7 @@ table caption{
     color: white;
     font-size: 20px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .child-website caption{
         margin-top: 30px;
     }
@@ -684,7 +665,7 @@ table caption{
     align-items: center;
     float: right;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .wechat-platform{
         float: left;
         margin-left: 10px;
@@ -695,7 +676,7 @@ table caption{
     color:white;
     margin-bottom:20px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .wechat-platform>span:first-child{
         margin-top: 30px;
     }

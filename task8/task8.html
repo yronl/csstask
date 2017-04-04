@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" charset="UTF-8">
-    <title>task8-1.html</title>
+    <title>task8.html</title>
     <link rel="stylesheet" type="text/css" href="task8.css" />
 </head>
 <body>
@@ -22,33 +22,28 @@
 <!--主体-->
 <div class="main">
     <!--导航栏-->
-    <ul id="myTab" class="nav nav-tabs">
-        <li><img class="nav-img" src="images8/jnshu.png" ></li>
-        <li><a href="#about" data-toggle="tab">关于</a></li>
-        <li><a href="#suggestion" data-toggle="tab">推荐</a></li>
-        <li><a href="#job" data-toggle="tab">职业</a></li>
-        <li class="active"><a href="#head" data-toggle="tab">首页</a></li>
-    </ul>
-    <!--小屏幕导航(screen width 500px)-->
-    <div class="panel-group min-screen-nav" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        导航栏
-                    </a>
-                </h4>
+    <nav class="navbar navbar-default screen-nav" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle nav-btn" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="nav-img" src="images8/jnshu.png" >
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body fold">
-                    <a href="#head" data-toggle="tab">首页</a>
-                    <a href="#job" data-toggle="tab">职业</a>
-                    <a href="#suggestion" data-toggle="tab">推荐</a>
-                    <a href="#about" data-toggle="tab">关于</a>
-                </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav nav-ul">
+                    <li class="active"><a href="#head" data-toggle="tab">首页</a></li>
+                    <li><a href="#job" data-toggle="tab">职业</a></li>
+                    <li><a href="#suggestion" data-toggle="tab">推荐</a></li>
+                    <li><a href="#about" data-toggle="tab">关于</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
     <!--导航内容-->
     <div id="myTabContent" class="tab-content">
         <!--首页内容-->
@@ -964,29 +959,28 @@
                             <span>推荐><span class="em-color">合作企业</span></span>
                         </div>
                     </div>
-                    <div class="col-xs-4 div-left ">
-                        <div class="col-xs-12">
-                            <span>合作企业</span>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="div-left">
+                            <div class="col-xs-12 intro-title-in">
+                                <span>合作企业</span>
+                            </div>
+                            <div class="intro-list">
+                                <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
+                                <a href="#"><span class="mini-cir"></span>腾讯视频</a>
+                                <a href="#"><span class="mini-cir"></span>土豆网</a>
+                                <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
+                                <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
+                                <a href="#"><span class="mini-cir"></span>腾讯视频</a>
+                                <a href="#"><span class="mini-cir"></span>土豆网</a>
+                                <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
+                                <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
+                                <a href="#"><span class="mini-cir"></span>腾讯视频</a>
+                                <a href="#"><span class="mini-cir"></span>土豆网</a>
+                                <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
+                            </div>
                         </div>
-                        <div class="col-xs-4"></div>
-                        <div class="col-xs-6">
-                                    <div class="intro-list">
-                                        <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
-                                        <a href="#"><span class="mini-cir"></span>腾讯视频</a>
-                                        <a href="#"><span class="mini-cir"></span>土豆网</a>
-                                        <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
-                                        <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
-                                        <a href="#"><span class="mini-cir"></span>腾讯视频</a>
-                                        <a href="#"><span class="mini-cir"></span>土豆网</a>
-                                        <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
-                                        <a href="#"><span class="mini-cir"></span>阿里巴巴</a>
-                                        <a href="#"><span class="mini-cir"></span>腾讯视频</a>
-                                        <a href="#"><span class="mini-cir"></span>土豆网</a>
-                                        <a href="#"><span class="mini-cir"></span>北京葡萄藤</a>
-                                    </div>
-                                </div>
                     </div>
-                    <div class="col-xs-8">
+                    <div class="col-sm-8 col-xs-12">
                         <div class="div-right">
                             <img src="images8/tudou.png">
                             <p>土豆网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。</p>
