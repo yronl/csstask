@@ -336,11 +336,17 @@ header div{
 
 /*职业内容*/
 .job-main{
-    padding: 0 80px 300px 80px;
+    padding: 0 10% 300px 10%;
     background-color: #fafafa;
-
+    margin:0;
 }
-.job-title{
+
+@media screen and (max-width:500px){
+    .job-main{
+        padding: 0 15px 300px 15px;
+    }
+}
+    .job-title{
     padding: 30px 0;
     color:#26a26f;
     font-size: 20px;
@@ -354,23 +360,22 @@ header div{
     width: 100%;
     display: inline-block;
     float: left;
-    padding: 20px 0;
+    padding: 10px 0;
     margin: 0;
     list-style-type: none;
     text-align: left;
+    line-height: 40px;
     border-bottom: 1px solid #26a26f;
 }
 .job-classify li{
-    display: inline-block;
     float:left;
+    margin-right:20px;
 }
 .job-classify li>span{
     color:#a1a1a1;
 }
 .job-classify li a{
-    display: inline-block;
     color:black;
-    margin:0 20px;
     text-decoration: none;
 }
 .job-classify li a:hover{
@@ -385,45 +390,43 @@ header div{
 .portrait-wrapper{
     display: inline-block;
     float:left;
-    width:120px;
-    height:120px;
+    width:36%;
+    padding-top:36%;
+    margin-right: 5px;
     background: url(images8/job-portrait.png) no-repeat;
     background-size: cover;
 }
-.job-main .col-xs-4{
-    margin:20px 0;
+@media screen and (max-width: 992px){
+    .portrait-wrapper{
+        width:20%;
+        padding-top:20%;
+    }
 }
-.per-row-first{
-    padding-left: 0;
-    float:left;
+@media screen and (max-width: 650px){
+    .portrait-wrapper{
+        width:100px;
+        padding-top:100px;
+    }
 }
-.per-row-last{
-    padding-right: 0;
-    float:right;
+.job-intro-div{
+    padding: 0;
 }
 .job-intro{
     position: relative;
-    padding: 10px 0 0 0;
     background-color: white;
     border:1px solid #d4cfcf;
-}
-.job-intro>.col-xs-5:first-child{
-    padding: 0 0 0 10px;
-    border:none;
-}
-.col-xs-7{
-    padding: 0;
-    border-left:1px solid #d4cfcf;
+    overflow: hidden;
+    margin: 20px 0;
 }
 .job-detail{
     padding: 10px;
     text-align: left;
     border-left:none;
 }
-.a-l{
+.border-l{
     border-left:1px solid #d4cfcf;
 }
-.col-xs-6{
+.half-row{
     padding: 10px 10px;
     text-align: left;
     border-top:1px solid #d4cfcf;
@@ -434,35 +437,31 @@ header div{
 .em-red,.em-red-last{
     color:red;
 }
-.col-xs-5{
-    padding: 10px 10px;
-    text-align: center;
-}
-
 .inner-title{
     font-size: 20px;
 }
 .job-detail-title{
     display: inline-block;
-    margin:5px 0 20px 0;
+    margin:5px 0 10px 0;
     font-size: 20px;
 }
-.job-detail>span{
+.job-detail>p{
+    padding-top: 5px;
+    display: block;
     line-height: 25px;
 }
-.a-t{
+.border-t{
     border-top:1px solid #d4cfcf;
 }
-.a-b{
+.border-b{
     border-bottom:1px solid #d4cfcf;
-}
-.col-xs-12.a-t,.col-xs-12.a-b{
-    padding:0;
 }
 .salary-intro{
     padding: 0;
 }
-.salary-intro>.col-xs-5{
+.salary-intro-title{
+    text-align: center;
+    padding: 10px 10px;
     border:none;
 }
 .salary{
@@ -470,6 +469,11 @@ header div{
     padding: 10px 10px;
     text-align: right;
     border-left:1px solid #d4cfcf;
+}
+@media screen and (max-width: 350px){
+    .salary{
+        padding: 10px 0;
+    }
 }
 .salary span:first-child{
     float:left;
