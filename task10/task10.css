@@ -19,8 +19,22 @@ header{
 header span{
     color:white;
 }
-header a{
+.header-link a{
+    display: inline-block;
+    height:40px;
+    padding: 0 15px;
+    line-height: 40px;
     color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 400px){
+    .header-link a{
+        padding: 0 5px;
+    }
+}
+.header-link a:hover{
+    color: black;
+    background-color: white;
 }
 
 /*主体内容*/
@@ -37,10 +51,7 @@ header a{
     background-color: #e1dfdf;
 }
 .btns-div button{
-    margin: 0 20px;
-}
-button.last-btn{
-    margin-right:0;
+    margin-left: 30px;
 }
 
 /*步骤介绍*/
@@ -109,9 +120,16 @@ span.step-icon{
 
 }
 .form-div-title{
+    display: block;
     font-size: 20px;
     border-left: 3px solid #1d7ad9;
     padding-left: 5px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 400px){
+    .form-div-title{
+        font-size: 16px;
+    }
 }
 
 /*选择箱型*/
@@ -136,13 +154,26 @@ span.step-icon{
     background-color: #eff0ff;
     position: relative;
 }
+
+input[type='radio'].type-input:checked{
+    width:13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 13px;
+    -webkit-appearance:none;
+    background: url("images10/radio.png") no-repeat scroll right center transparent;
+    background-size: cover;
+    outline: 13px;
+}
 .select-input-wrapper{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
-.select-input-wrapper>span{
+.select-input-wrapper>div{
+    display: inline-block;
+    height: 28px;
     margin: 10px 0;
 }
 .input-name{
@@ -151,6 +182,10 @@ span.step-icon{
 }
 .detail-select{
     flex-shrink: 0;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("images10/caret.png") no-repeat scroll right center transparent;
+    padding-right: 30px;
 }
 
 /*确定尺寸*/
@@ -183,7 +218,9 @@ span.step-icon{
 .ruler-wrapper{
     margin: 10px 10px 10px 0;
 }
-
+.ruler-input{
+    margin:0 5px;
+}
 .material-wrapper{
     display: flex;
     justify-content: flex-start;
@@ -191,5 +228,75 @@ span.step-icon{
     flex-wrap: wrap;
 }
 .material-wrapper>span{
+    display: flex;
     margin: 10px 0;
+}
+.submit-input{
+    width:150px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    border:none;
+}
+.submit-input-wrapper{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-wrapper{
+    padding: 30px 10%;
+    background-color: #e1dfdf;
+}
+.info-wrapper span{
+    color:#999999;
+}
+.info-wrapper-title{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.addition-info{
+    width: 240px;
+    display: inline-block;
+}
+.addition-info span{
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.addition-info span:first-child{
+    color: #1d7ad9;
+}
+.contact-wrapper{
+    vertical-align: top;
+}
+.contact{
+    display: inline-block;
+    margin-right: 15px;
+    float: right;
+}
+@media screen and (max-width: 992px){
+    .contact{
+        float: left;
+    }
+}
+.contact span{
+    display: block;
+    line-height: 30px;
+}
+.wechat-public-51{
+    display: inline-block;
+    float: right;
+}
+
+@media screen and (max-width: 992px){
+    .wechat-public-51{
+        float: none;
+        vertical-align: top;
+    }
 }

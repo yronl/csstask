@@ -12,11 +12,12 @@
 <!--页眉-->
 <header>
     <span>客服热线：010-594-78634</span>
-    <a class="sign-up" href="#">登陆</a>
-    <a class="sign-in" href="#">注册</a>
+    <div class="header-link">
+        <a class="sign-up" href="#">登陆</a>
+        <a class="sign-in" href="#">注册</a>
+    </div>
 </header>
 <!--主体-->
-
 <div class="carton-main">
     <!--按钮区-->
     <div class="btns-div">
@@ -84,10 +85,10 @@
                 <div class="ruler-div">
                     <div class="ruler-div-in">
                         <div class="input-wrapper">
-                            <span>
+                            <div>
                                 <input class="type-input" type="radio" name="carton-type" value="" />
                                 <span class="input-name">外径</span>
-                            </span>
+                            </div>
                         </div>
                         <div class="ruler-wrapper-div">
                             <div class="ruler-wrapper">
@@ -103,20 +104,20 @@
                     </div>
                     <div class="ruler-div-in">
                         <div class="input-wrapper">
-                            <span>
+                            <div>
                                 <input class="type-input" type="radio" name="carton-type" value="" />
                                 <span class="input-name">内径</span>
-                            </span>
+                            </div>
                         </div>
                         <div class="ruler-wrapper-div">
                             <div class="ruler-wrapper">
-                                <span>长<input type="text" size="4" name="length" value="" />mm</span>
+                                <span>长<input class="ruler-input" type="text" size="4" name="length" value="" />mm</span>
                             </div>
                             <div class="ruler-wrapper">
-                                <span>宽<input type="text" size="4" name="width" value="" />mm</span>
+                                <span>宽<input class="ruler-input" type="text" size="4" name="width" value="" />mm</span>
                             </div>
                             <div class="ruler-wrapper">
-                                <span>高<input type="text" size="4" name="height" value="" />mm</span>
+                                <span>高<input class="ruler-input" type="text" size="4" name="height" value="" />mm</span>
                             </div>
                         </div>
                     </div>
@@ -158,8 +159,35 @@
                 </select>
             </div>
         </div>
-        <input type="submit" value="下一步" />
+        <div class="submit-input-wrapper">
+            <input class="submit-input" type="submit" value="下一步" />
+        </div>
     </form>
 </div>
+<!--信息区-->
+    <div class="row info-wrapper">
+        <div class="col-md-4 col-xs-12">
+            <span class="info-wrapper-title">51包装网— 纸箱包装首选服务平台</span>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <div class="addition-info">
+                <span>关于我们</span>
+                <span>配送流程</span>
+                <span>联系我们</span>
+                <span>下单指南</span>
+                <span>媒体介绍</span>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <div class="contact-wrapper">
+                <img class="wechat-public-51" src="images10/wechat-public.png" />
+                <div class="contact">
+                    <span>TEL:400-0000-00</span>
+                    <span>企业QQ:123456789</span>
+                    <span>微信号:XXXXXXX</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
