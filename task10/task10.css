@@ -182,11 +182,16 @@ input[type='radio'].type-input:checked{
 }
 .detail-select{
     flex-shrink: 0;
+    /*很关键：将默认的select选择框样式清除*/
     -moz-appearance:none;
     -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
     background: url("images10/caret.png") no-repeat scroll right center transparent;
+    /*设置右内边距避免被覆盖*/
     padding-right: 30px;
 }
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }/*无效*/
 
 /*确定尺寸*/
 .ruler-div{

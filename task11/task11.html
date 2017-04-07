@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;" charset="UTF-8">
     <title>task11</title>
+    <link rel="stylesheet" type="text/css" href="task11.css" />
 </head>
 <body>
-
+<div class="panel">
+    <p class="panel-left">注册</p>
+    <p class="panel-right">关闭</p>
+    <p class="panel-mid">登录</p>
+</div>
+<form class="form">
+    <div class="div1">
+        <div class="wrapper-iphone"><img class="iphone" src="images11/iphone.png"></div>
+        <div class="wrapper-line"><img class="ver" src="images11/ver.png"></div>
+        <div class="wrapper-num"><input class="text" type="text" name="number" placeholder="请输入手机号"/></div>
+    </div>
+    <div class="div2">
+        <div class="wrapper-locked"><img class="locked" src="images11/locked.png"></div>
+        <div class="wrapper-line"><img class="ver" src="images11/ver.png"></div>
+        <div class="wrapper-pw"><input class="text" type="text" name="password" placeholder="请输入密码"/></div>
+    </div>
+</form>
+<input class="button" type="submit" value="登录"/>
+<p class="problem">忘记密码</p>
 </body>
 </html>

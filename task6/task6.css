@@ -163,7 +163,7 @@ html, body {
         white-space: nowrap;
     }
 
-    #text {
+    .duration {
         display: inline;
         margin-left: 29px;
     }
@@ -189,7 +189,10 @@ html, body {
     .btn.btn-link {
         margin: 0 20px;
     }
-
-    .btn.btn-link > .user + p {
+    .home+span{
+        margin-top: 10px;
+    }
+    .user + span {
+        margin-top: 10px;
         color: #bebec3;
     }

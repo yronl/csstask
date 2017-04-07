@@ -1,0 +1,38 @@
+
+.box-size(@width,@height){
+  width:@width;
+  height:@height;
+}
+.box-size(@width){
+  width:@width;
+  height:auto;
+}
+.font(@size,@height,@color){
+  font-size:@size;
+  line-height:@height;
+  color:@color;
+}
+.color(@color1,@color2){
+  color:@color1;
+  background-color: @color2;
+}
+.flex(){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex(@j){
+  display: flex;
+  justify-content: @j;
+}
+.flex(@j,@a){
+  display: flex;
+  justify-content: @j;
+  align-items: @a;
+}
+.flex(@d,@j,@a){
+  display: flex;
+  flex-direction: @d;
+  justify-content: @j;
+  align-items: @a;
+}

@@ -1,0 +1,133 @@
+
+@color1:#a8a8a8;
+@color2:#68cdd5;
+@import "style";
+
+/*样式*/
+html,body{
+  .box-size(100%,100%);
+  max-width: 700px;
+  margin:0 auto;
+  padding:0;
+}
+header{
+  .box-size(100%,50px);
+  background-color: @color2;
+  text-align: center;
+}
+.back {
+  position: absolute;
+  margin: 0 20px;
+}
+.title {
+  margin: 0 auto;
+}
+.back, .title {
+  .box-size(auto,50px);
+  .font(20px,50px,white);
+  font-weight: bold;
+}
+.top-div {
+  .box-size(100%,200px);
+  .flex();
+  background-image: url(images12/nur-bg.png);
+  background-size: cover;
+}
+.por {
+  .box-size(100px,100px);
+}
+.wrapper-por {
+  margin: 30px;
+}
+.top-div-in {
+  .flex(flex-start);
+  flex-direction: column;
+}
+.location {
+  .flex();
+}
+.name {
+  margin: 10px 0;
+  color: white;
+}
+.address {
+  margin: 0 10px;
+  color: white;
+}
+.bottom-div {
+  overflow: hidden;
+  .flex(flex-start);
+  flex-direction: column;
+}
+.list-title, .list, .list-last {
+  .flex();
+  flex-grow: 1;
+  border-bottom: 1px solid #a8a8a8
+}
+.list-title, .list {
+  .box-size(auto,50px);
+}
+.list, .list-last {
+  margin: 0 15px;
+}
+
+.list-last {
+  margin-bottom: 60px;
+}
+
+.wrapper-line, .wrapper-star {
+  margin: 0 10px;
+}
+
+.skill, .personal {
+  line-height: 50px;
+}
+.star {
+  .box-size(24px,24px);
+}
+
+.list-item {
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #a8a8a8;
+}
+
+.work-age, .hours, .charge, .self-introduce {
+  margin-left: 10px;
+}
+
+.charge {
+  color: red;
+}
+footer {
+  .box-size(100%,50px);
+  max-width: 700px;
+  position: fixed;
+  bottom: 0;
+  .flex(space-between);
+}
+
+.wrapper-left, .wrapper-right {
+  .flex(center);
+  .box-size(50%);
+  margin: 0;
+  padding: 0;
+}
+
+.button-left, .button-right {
+  margin: 0 10px;
+  flex-grow: 1;
+  .font(20px,100%,black);
+  border-radius: 5px;
+}
+
+.button-left {
+  .color(@color2,white);
+  border: 2px solid #68cdd5;
+}
+
+.button-right {
+  .color(white,@color2);
+  border: none;
+}
