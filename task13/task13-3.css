@@ -14,7 +14,6 @@
 .spy-victory {
     width: 70%;
     max-width: 351px;
-    /*display: block;*/
     margin: 0 auto;
 }
 
@@ -42,9 +41,6 @@
 }
 
 .game-info div {
-    /*display: flex;
-    justify-content: flex-start;
-    align-items: center;*/
     flex-wrap: wrap;
 }
 .track,.detail{
