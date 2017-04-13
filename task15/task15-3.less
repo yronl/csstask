@@ -1,0 +1,203 @@
+@import "style";
+
+.main{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row-fit{
+  padding: 30px 10%;
+  overflow: hidden;
+}
+
+/*职业内容*/
+.job-main{
+  padding: 0 10% 300px 10%;
+  background-color: #fafafa;
+  margin:0;
+}
+
+@media screen and (max-width:500px){
+  .job-main{
+    padding: 0 15px 300px 15px;
+  }
+}
+.job-title{
+  padding: 30px 0;
+  color:#26a26f;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid #d4cfcf;
+}
+.job-classify{
+  padding:0;
+}
+.job-classify ul{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  padding: 10px 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  line-height: 40px;
+  border-bottom: 1px solid #26a26f;
+}
+.job-classify li{
+  float:left;
+  margin-right:20px;
+}
+.job-classify li>span{
+  color:#a1a1a1;
+}
+.job-classify li a{
+  color:black;
+  text-decoration: none;
+}
+.job-classify li a:hover{
+  background-color: #26a26f;
+}
+.wrapper-inner-title{
+  text-align: left;
+  border-bottom: 1px solid #d4cfcf;
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+.portrait-wrapper{
+  display: inline-block;
+  float:left;
+  width:36%;
+  padding-top:36%;
+  margin-right: 5px;
+  background: url(images15/job-portrait.png) no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 992px){
+  .portrait-wrapper{
+    width:20%;
+    padding-top:20%;
+  }
+}
+@media screen and (max-width: 650px){
+  .portrait-wrapper{
+    width:100px;
+    padding-top:100px;
+  }
+}
+.job-intro-div{
+  padding: 0;
+}
+.job-intro{
+  position: relative;
+  background-color: white;
+  border:1px solid #d4cfcf;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.job-detail{
+  padding: 10px;
+  text-align: left;
+  border-left:none;
+}
+.border-l{
+  border-left:1px solid #d4cfcf;
+}
+.half-row{
+  padding: 10px 10px;
+  text-align: left;
+  border-top:1px solid #d4cfcf;
+}
+.red-star,.em-red{
+  margin-left: 10px;
+}
+.em-red,.em-red-last{
+  color:red;
+}
+.inner-title{
+  font-size: 20px;
+}
+.job-detail-title{
+  display: inline-block;
+  margin:5px 0 10px 0;
+  font-size: 20px;
+}
+.job-detail>p{
+  padding-top: 5px;
+  display: block;
+  line-height: 25px;
+}
+.border-t{
+  border-top:1px solid #d4cfcf;
+}
+.border-b{
+  border-bottom:1px solid #d4cfcf;
+}
+.salary-intro{
+  padding: 0;
+}
+.salary-intro-title{
+  text-align: center;
+  padding: 10px 10px;
+  border:none;
+}
+.salary{
+  float: right;
+  padding: 10px 10px;
+  text-align: right;
+  border-left:1px solid #d4cfcf;
+}
+@media screen and (max-width: 350px){
+  .salary{
+    padding: 10px 0;
+  }
+}
+.salary span:first-child{
+  float:left;
+}
+.study-num{
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.study-tip{
+  padding: 10px 10px;
+  text-align: left;
+  border-top:1px solid #d4cfcf;
+}
+
+/*动画显示*/
+.cartoon{
+  display: inline-block;
+  width: 100%;
+  height:100%;
+  padding : 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  background: rgba(20, 20, 20, 0.6);
+  border:1px solid black;
+  visibility: hidden;
+}
+@keyframes myfirst{
+  0%   {background: rgba(20, 20, 20, 0);}
+  25%  {background: rgba(20, 20, 20, 0.2);}
+  50%  {background: rgba(20, 20, 20, 0.4);}
+  100% {background: rgba(20, 20, 20, 0.6);}
+
+}
+.job-intro:hover .cartoon{
+  animation: myfirst 4s;
+  visibility: visible;
+}
+.cartoon-title{
+  display: inline-block;
+  font-size: 20px;
+  margin:20px 0;
+}
+.cartoon p{
+  text-align: left;
+  text-indent: 2em;
+  line-height: 25px;
+}

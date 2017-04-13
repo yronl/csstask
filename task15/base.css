@@ -1,0 +1,55 @@
+/*样式拆分*/
+/*使用原子类，将属性名和属性值首字母以“-”连接作为类名，使用时直接添加到页面元素类名中*/
+
+.of-h{
+    overflow: hidden;
+}
+/*布局*/
+.d-f{
+    display: flex;
+}
+.d-b{
+    display: block;
+}
+.jc-fs{
+    justify-content: flex-start;
+}
+.jc-fe{
+    justify-content: flex-end;
+}
+.jc-c{
+    justify-content: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.ai-c{
+    align-items: center;
+}
+.fd-c{
+    flex-direction: column;
+}
+/*边框*/
+.b-n{
+    border: none;
+}
+/*定位*/
+.p-r{
+    position: relative;
+}
+.p-a{
+    position: absolute;
+}
+.p-f{
+    position: fixed;
+}
+/*可见性*/
+.v-h{
+    visibility: hidden;
+}
+.v-v{
+    visibility: visible;
+}
+.v-c{
+    visibility: collapse;
+}

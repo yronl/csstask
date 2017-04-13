@@ -41,7 +41,7 @@ header div{
 /*主体*/
 .main{
     width:100%;
-    background-color: #e3e0e0;
+    background-color: #fafafa;
 }
 /*导航栏*/
 
@@ -133,8 +133,8 @@ header div{
 
 /*三大优点以及人数统计*/
 .container{
-    width:100%;
-    padding: 0;
+    width: 100%;
+    margin: 0;
 }
 .advantage{
     text-align: left;
@@ -184,7 +184,7 @@ header div{
 
 /*如何学习*/
 .steps{
-    padding:20px 0;
+    padding:20px 15px;
 }
 .steps-title{
     font-size: 20px;
@@ -207,24 +207,25 @@ header div{
     text-align: left;
 }
 .circle{
-    width:50px;
-    height:50px;
+    width:75px;
+    height:75px;
     background-image: url(images8/process-icon.png);
     background-size: cover;
     text-align: center;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 75px;
     color:#29b078;
     flex-shrink: 0;
     margin:0 10px;
 }
-@media screen  and (min-width:420px)  and (max-width:992px){
+/*@media screen  and (min-width:420px)  and (max-width:992px){
     .circle{
         width: 75px;
         height:75px;
         font-size: 20px;
         line-height: 75px;
     }
-}
+}*/
 .circle+span{
     color:#cacaca;
 }
@@ -289,7 +290,7 @@ header div{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: white;
+    padding: 0 15px;
 }
 
 .img-wrapper{
@@ -322,6 +323,10 @@ header div{
     flex:0;
     flex-wrap: wrap;
 }
+.underline-word1{
+    padding-bottom: 5px;
+    border-bottom: 1px  solid #26a26f;
+}
 .mobile-software,.recruit,.find-job{
     width:130px;
     height:60px;
@@ -338,7 +343,6 @@ header div{
 .job-main{
     padding: 0 10% 300px 10%;
     background-color: #fafafa;
-    margin:0;
 }
 
 @media screen and (max-width:500px){
@@ -662,12 +666,17 @@ table caption{
 .child-website td{
     padding:0 10px 10px 10px;
 }
+.underline-word2{
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
 .wechat-platform {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     float: right;
+    margin-right: 15px;
 }
 @media screen and (max-width: 767px){
     .wechat-platform{
