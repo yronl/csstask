@@ -1,112 +1,104 @@
-@import "rule";
-
 /*页眉*/
-header{
-  width:100%;
-  height:40px;
-  display:flex;
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:0 10%;
+  padding: 0 10%;
 }
-@media screen and (max-width: 500px){
-  header{
+@media screen and (max-width: 500px) {
+  header {
     padding: 0 15px;
   }
 }
-header span:first-child{
-  color:#69c199;
+header span:first-child {
+  color: #69c199;
 }
-header div{
-  width:117px;
-  height:28px;
+header div {
+  width: 117px;
+  height: 28px;
   background: url(images15/sprites.png) no-repeat;
   background-size: cover;
 }
-header div span{
+header div span {
   display: inline-block;
   width: 28px;
-  height:28px;
+  height: 28px;
 }
-.we-chat{
+.we-chat {
   background-position: 0 0;
 }
-.qq{
+.qq {
   margin: 0 12px;
   background-position: -44px 0;
 }
-.sina{
+.sina {
   background-position: -88px 0;
 }
-
 /*首页*/
-
-.main{
+.main {
   width: 100%;
   background-color: #fafafa;
   overflow: hidden;
 }
-
 /**导航栏**/
-
-.nav-div{
+.nav-div {
   width: 100%;
   background-color: #29b078;
 }
-
-.nav{
+.nav {
   list-style-type: none;
   float: right;
-  margin:0 10% 0 0;
+  margin: 0 10% 0 0;
   padding: 0;
 }
-@media screen and (max-width: 500px){
-  .nav{
+@media screen and (max-width: 500px) {
+  .nav {
     margin-right: 15px;
   }
 }
-@media screen and (max-width: 425px){
-  .nav{
+@media screen and (max-width: 425px) {
+  .nav {
     display: none;
-    width:100%;
-    float:none;
+    width: 100%;
+    float: none;
   }
 }
-.nav-img{
-  height:70px;
+.nav-img {
+  height: 70px;
   vertical-align: middle;
-  margin-left:10%;
+  margin-left: 10%;
 }
-@media screen and (max-width: 500px){
-  .nav-img{
+@media screen and (max-width: 500px) {
+  .nav-img {
     margin-left: 15px;
   }
 }
-.nav li{
-  float:left;
+.nav li {
+  float: left;
 }
-@media screen and (max-width: 425px){
-  .nav li{
+@media screen and (max-width: 425px) {
+  .nav li {
     float: none;
     text-align: center;
   }
 }
-.nav li a{
+.nav li a {
   display: block;
   height: 70px;
-  padding:25px 15px;
+  padding: 25px 15px;
   color: white;
   background-color: #29b078;
   text-decoration: none;
 }
-.nav li:hover a{
+.nav li:hover a {
   border-bottom: 3px solid white;
 }
-
-.hamburger-btn{
-  width:40px;
-  height:40px;
-  display:none;
+.hamburger-btn {
+  width: 40px;
+  height: 40px;
+  display: none;
   margin: 15px 0 10px 0;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
@@ -115,8 +107,8 @@ header div span{
   border-right: none;
   outline: none;
 }
-@media screen and (max-width: 425px){
-  .hamburger-btn{
+@media screen and (max-width: 425px) {
+  .hamburger-btn {
     display: inline-block;
     vertical-align: middle;
     float: right;
@@ -128,40 +120,93 @@ header div span{
     display: block;
   }
 }*/
-.hamburger-btn:before{
+.hamburger-btn:before {
   content: "";
   position: absolute;
   right: 15px;
-  top:73px;
+  top: 73px;
   width: 40px;
   border-top: 3px solid white;
 }
-
 /****************************/
 /*自定义栅格*/
-.container{
+.container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-.row{
-  margin:0 -15px;
+.row {
+  margin: 0 -15px;
   padding: 0;
 }
-.container:after,.row:after{
-  clear:both;
+.container:after,
+.row:after {
+  clear: both;
 }
-.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,
-.col-xs-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,
-.col-sm-11,.col-sm-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,
-.col-md-10,.col-md-11,.col-md-12,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,
-.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
-  position:relative;
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+  position: relative;
   padding: 0 15px;
-  min-height:1px;
+  min-height: 1px;
 }
-.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,
-.col-xs-12{
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -200,11 +245,20 @@ header div span{
 .col-xs-1 {
   width: 8.33333333%;
 }
-
-@media screen and (min-width: 768px){
-  .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,
-  .col-sm-11,.col-sm-12{
-    float:left;
+@media screen and (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
   }
   .col-sm-12 {
     width: 100%;
@@ -243,12 +297,21 @@ header div span{
     width: 8.33333333%;
   }
 }
-
-@media screen and (min-width: 992px){
-  .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,
-  .col-md-12{
-  float:left;
-}
+@media screen and (min-width: 992px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
   .col-md-12 {
     width: 100%;
   }
@@ -286,11 +349,20 @@ header div span{
     width: 8.33333333%;
   }
 }
-
-@media screen and (min-width: 1200px){
-  .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,
-  .col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
-    float:left;
+@media screen and (min-width: 1200px) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
   }
   .col-lg-12 {
     width: 100%;
@@ -329,43 +401,39 @@ header div span{
     width: 8.33333333%;
   }
 }
-
-
 /*网站信息*/
-
-.information{
+.information {
   background-color: #26a26f;
 }
-.grid-in{
+.grid-in {
   padding: 0;
 }
-.information table span{
-  color:white;
+.information table span {
+  color: white;
 }
-
-table caption{
-  padding:0 0 20px 10px;
+table caption {
+  padding: 0 0 20px 10px;
   color: white;
   font-size: 20px;
   text-align: left;
 }
-@media screen and (max-width: 767px){
-  .child-website caption{
+@media screen and (max-width: 767px) {
+  .child-website caption {
     margin-top: 30px;
   }
 }
-.jnshu td{
+.jnshu td {
   padding: 0 10px;
   border-left: 1px solid white;
 }
-.jnshu td a:hover{
+.jnshu td a:hover {
   text-decoration: none;
 }
-.jnshu td:first-child{
-  border:none;
+.jnshu td:first-child {
+  border: none;
 }
-.child-website td{
-  padding:0 10px 10px 10px;
+.child-website td {
+  padding: 0 10px 10px 10px;
 }
 .wechat-platform {
   display: flex;
@@ -374,43 +442,39 @@ table caption{
   align-items: center;
   float: right;
 }
-@media screen and (max-width: 767px){
-  .wechat-platform{
+@media screen and (max-width: 767px) {
+  .wechat-platform {
     float: left;
     margin-left: 10px;
   }
 }
-.wechat-platform>span:first-child{
+.wechat-platform > span:first-child {
   font-size: 20px;
-  color:white;
-  margin-bottom:20px;
+  color: white;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 767px){
-  .wechat-platform>span:first-child{
+@media screen and (max-width: 767px) {
+  .wechat-platform > span:first-child {
     margin-top: 30px;
   }
 }
-.wechat-public{
+.wechat-public {
   display: inline-block;
   width: 120px;
   height: 120px;
   background-image: url("images15/wechat-public.png");
   background-size: cover;
 }
-
 /*页脚*/
-
-footer{
-  width:100%;
-  padding:10px;
+footer {
+  width: 100%;
+  padding: 10px;
   background-color: #26a26f;
   text-align: center;
   border-top: 1px solid #32c086;
 }
-
-.legal{
+.legal {
   display: block;
-  width:100%;
-  color:white;
-
+  width: 100%;
+  color: white;
 }

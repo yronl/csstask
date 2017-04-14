@@ -218,14 +218,7 @@ header div{
     flex-shrink: 0;
     margin:0 10px;
 }
-/*@media screen  and (min-width:420px)  and (max-width:992px){
-    .circle{
-        width: 75px;
-        height:75px;
-        font-size: 20px;
-        line-height: 75px;
-    }
-}*/
+
 .circle+span{
     color:#cacaca;
 }

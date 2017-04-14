@@ -1,6 +1,8 @@
 /*样式拆分*/
 /*使用原子类，将属性名和属性值首字母以“-”连接作为类名，使用时直接添加到页面元素类名中*/
+/*原子类权衡使用，一般用于添加单个元素属性，不用于一组或多组相同元素项的属性设置*/
 
+/*溢出*/
 .of-h{
     overflow: hidden;
 }
@@ -11,23 +13,8 @@
 .d-b{
     display: block;
 }
-.jc-fs{
-    justify-content: flex-start;
-}
-.jc-fe{
-    justify-content: flex-end;
-}
-.jc-c{
-    justify-content: center;
-}
-.jc-sb{
-    justify-content: space-between;
-}
-.ai-c{
-    align-items: center;
-}
-.fd-c{
-    flex-direction: column;
+.d-ib{
+    display: inline-block;
 }
 /*边框*/
 .b-n{
@@ -42,6 +29,41 @@
 }
 .p-f{
     position: fixed;
+}
+/*文本*/
+.ta-l{
+    text-align: left;
+}
+.ta-r{
+    text-align: right;
+}
+.ta-c{
+    text-align: center;
+}
+.td-n{
+    text-decoration: none;
+}
+.va-t{
+    vertical-align: top;
+}
+.va-bo{
+    vertical-align: bottom;
+}
+.va-ba{
+    vertical-align: baseline;
+}
+.va-m{
+    vertical-align: middle;
+}
+/*浮动*/
+.f-l{
+    float:left;
+}
+.f-r{
+    float:right;
+}
+.f-n{
+    float:none;
 }
 /*可见性*/
 .v-h{

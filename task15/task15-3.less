@@ -1,202 +1,112 @@
-@import "style";
+@import "rule";
 
-.main{
-  width: 100%;
-  margin: 0;
-  padding: 0;
+/*推荐内容*/
+
+.recommend{
+  width:100%;
+  padding:10%;
+  background: url(images15/recommend.png) no-repeat;
+  background-size: cover;
 }
+.rec-intro{
+  .flex(flex-start,flex-end);
+  /*display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;*/
+  margin:0 20px;
+}
+.rec-intro span{
+  color:white;
+}
+.span-wrapper{
+  .flex(column,space-between,center);
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;*/
+  margin:0 20px;
+}
+.span-wrapper>span:first-child{
+  font-size: 30px;
+}
+.em{
+  font-size: 50px;
+}
+
+/*合作企业*/
 
 .row-fit{
   padding: 30px 10%;
   overflow: hidden;
 }
-
-/*职业内容*/
-.job-main{
-  padding: 0 10% 300px 10%;
+.intro-main{
+  padding: 0 10%;
   background-color: #fafafa;
-  margin:0;
 }
-
-@media screen and (max-width:500px){
-  .job-main{
-    padding: 0 15px 300px 15px;
-  }
-}
-.job-title{
-  padding: 30px 0;
-  color:#26a26f;
+.intro-title{
+  width:100%;
   font-size: 20px;
-  text-align: left;
-  border-bottom: 1px solid #d4cfcf;
+  /*text-align: left;*/
+  padding:20px 0;
 }
-.job-classify{
-  padding:0;
+.em-color{
+  color:#72c49e;
 }
-.job-classify ul{
+.div-left{
   width: 100%;
-  display: inline-block;
-  float: left;
-  padding: 10px 0;
-  margin: 0;
-  list-style-type: none;
-  text-align: left;
-  line-height: 40px;
-  border-bottom: 1px solid #26a26f;
-}
-.job-classify li{
-  float:left;
-  margin-right:20px;
-}
-.job-classify li>span{
-  color:#a1a1a1;
-}
-.job-classify li a{
-  color:black;
-  text-decoration: none;
-}
-.job-classify li a:hover{
-  background-color: #26a26f;
-}
-.wrapper-inner-title{
-  text-align: left;
-  border-bottom: 1px solid #d4cfcf;
-  margin-bottom: 30px;
-  padding: 30px 0;
-}
-.portrait-wrapper{
-  display: inline-block;
-  float:left;
-  width:36%;
-  padding-top:36%;
-  margin-right: 5px;
-  background: url(images15/job-portrait.png) no-repeat;
-  background-size: cover;
-}
-@media screen and (max-width: 992px){
-  .portrait-wrapper{
-    width:20%;
-    padding-top:20%;
-  }
-}
-@media screen and (max-width: 650px){
-  .portrait-wrapper{
-    width:100px;
-    padding-top:100px;
-  }
-}
-.job-intro-div{
-  padding: 0;
-}
-.job-intro{
-  position: relative;
+  /*display: inline-block;
+  vertical-align: top;
+  text-align: center;*/
   background-color: white;
-  border:1px solid #d4cfcf;
-  overflow: hidden;
-  margin: 20px 0;
+  margin-bottom: 40px;
 }
-.job-detail{
-  padding: 10px;
-  text-align: left;
-  border-left:none;
-}
-.border-l{
-  border-left:1px solid #d4cfcf;
-}
-.half-row{
-  padding: 10px 10px;
-  text-align: left;
-  border-top:1px solid #d4cfcf;
-}
-.red-star,.em-red{
-  margin-left: 10px;
-}
-.em-red,.em-red-last{
-  color:red;
-}
-.inner-title{
+.intro-title-in {
+  /*display: block;
+  text-align: center;*/
+  padding: 20px 0;
+  border-bottom: 1px solid #cfcece;
   font-size: 20px;
 }
-.job-detail-title{
-  display: inline-block;
-  margin:5px 0 10px 0;
-  font-size: 20px;
-}
-.job-detail>p{
-  padding-top: 5px;
-  display: block;
+.intro-list{
+  /*display: inline-block;
+  text-align: left;*/
+  width: 100px;
+  margin: 20px auto;
   line-height: 25px;
 }
-.border-t{
-  border-top:1px solid #d4cfcf;
+.intro-list a{
+  display: block;
+  color:#29b078;
+  text-decoration: none;
 }
-.border-b{
-  border-bottom:1px solid #d4cfcf;
+.intro-list a:hover{
+  color:#ff650e;
+  text-decoration: none;
 }
-.salary-intro{
-  padding: 0;
+.intro-list a:hover .mini-cir{
+  background-color:#f4803d;
 }
-.salary-intro-title{
-  text-align: center;
-  padding: 10px 10px;
-  border:none;
-}
-.salary{
-  float: right;
-  padding: 10px 10px;
-  text-align: right;
-  border-left:1px solid #d4cfcf;
-}
-@media screen and (max-width: 350px){
-  .salary{
-    padding: 10px 0;
-  }
-}
-.salary span:first-child{
-  float:left;
-}
-.study-num{
-  padding: 10px 10px;
-  text-align: left;
-  font-size: 20px;
-}
-.study-tip{
-  padding: 10px 10px;
-  text-align: left;
-  border-top:1px solid #d4cfcf;
-}
-
-/*动画显示*/
-.cartoon{
+.mini-cir{
   display: inline-block;
-  width: 100%;
-  height:100%;
-  padding : 20px 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color:white;
-  background: rgba(20, 20, 20, 0.6);
-  border:1px solid black;
-  visibility: hidden;
+  .box-size(10px,10px);
+  /*width:10px;
+  height:10px;*/
+  border:1px solid #ff640c;
+  border-radius: 10px;
+  margin-right: 10px;
 }
-@keyframes myfirst{
-  0%   {background: rgba(20, 20, 20, 0);}
-  25%  {background: rgba(20, 20, 20, 0.2);}
-  50%  {background: rgba(20, 20, 20, 0.4);}
-  100% {background: rgba(20, 20, 20, 0.6);}
-
+.div-right{
+  /*display: inline-block;*/
+  background-color: white;
+  padding: 30px 20px;
+  margin-bottom: 100px;
 }
-.job-intro:hover .cartoon{
-  animation: myfirst 4s;
-  visibility: visible;
+.div-right img{
+  /*display: inline-block;
+  float:left;*/
+  margin:0 15px 15px 0;
 }
-.cartoon-title{
-  display: inline-block;
-  font-size: 20px;
-  margin:20px 0;
-}
-.cartoon p{
+.div-right p{
   text-align: left;
   text-indent: 2em;
   line-height: 25px;
