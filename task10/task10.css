@@ -50,15 +50,32 @@ header span{
     flex-wrap: wrap;
     background-color: #e1dfdf;
 }
-.btns-div button{
-    outline: none !important;
+.btns{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
     margin-left: 30px;
+    background-color: white;
+}
+.first-btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+    color:white;
+    background-color:#1d7ad9;
+}
+.btns:hover{
+    color: white;
+    background-color: #1d7ad9;
 }
 
 /*步骤介绍*/
 .carton-steps{
     width: 100%;
-    height:100px;
+    height:130px;
     padding:0 10%;
     margin: 20px 0;
     display: flex;
@@ -74,9 +91,9 @@ header span{
 .orange-line1,.orange-line2{
     width: 50px;
     height: 30px;
-    margin-top: -20px;
     display: inline-block;
     border-bottom: 5px solid #cccccc;
+    vertical-align: baseline;
 }
 .orange-line1{
     margin-right: -2px;
@@ -93,6 +110,7 @@ span.step-icon{
     color: white;
     background-color: #cccccc;
     text-align: center;
+    vertical-align: middle;
 }
 .carton-step{
     width: 116px;
@@ -140,31 +158,78 @@ span.step-icon{
     align-items: center;
     padding: 10px;
     color:#1d7ad9;
-    background-color: #eae8e8;
+    background-color: #f3f3f3;
 }
 .carton-title span{
     margin-left: 5px;
 }
-.type-select{
+.type-select1,.type-select2,.type-select3{
     width: 100%;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #a1a1a3;
-    background-color: #eff0ff;
+    background-color: #fbfcff;
     position: relative;
 }
+.type-select1{
+    padding: 20px 20px;
+    border-bottom: 1px solid #f3f3f3;
+}
+@media screen and (max-width: 400px){
+    .type-select1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .type-select2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .type-select3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.type-select2{
+    padding: 20px 20px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+.type-select3{
+    padding: 30px 20px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
 
-input[type='radio'].type-input:checked{
-    width:13px;
-    height: 13px;
+.wrapper-in,.wrapper-in1,.wrapper-in2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:20px;
+}
+.wrapper-in{
+    width:115px;
+}
+.wrapper-in1{
+    width: 105px;
+}
+.wrapper-in2{
+    width: 155px;
+}
+input[type='radio'].type-input{
     display: inline-block;
-    border-radius: 13px;
+    margin: 0;
+}
+input[type='radio'].type-input:checked{
+    width:18px;
+    height: 18px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 18px;
     -webkit-appearance:none;
     background: url("images10/radio.png") no-repeat scroll right center transparent;
     background-size: cover;
-    outline: 13px;
+    outline: 18px;
 }
 .select-input-wrapper{
     display: flex;
@@ -172,17 +237,17 @@ input[type='radio'].type-input:checked{
     align-items: center;
     flex-wrap: wrap;
 }
-.select-input-wrapper>div{
-    display: inline-block;
-    height: 28px;
-    margin: 10px 0;
-}
+
 .input-name{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 40px 0 15px;
 }
 .detail-select{
+    width:120px;
+    height: 34px;
     flex-shrink: 0;
+    margin: 10px 0;
+    padding-left:15px ;
     /*很关键：将默认的select选择框样式清除*/
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -192,7 +257,13 @@ input[type='radio'].type-input:checked{
     padding-right: 30px;
 }
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-select::-ms-expand { display: none; }/*无效*/
+/*select::-ms-expand { display: none; }无效*/
+
+@media screen and (max-width: 400px){
+    .detail-select{
+        align-self: flex-end;
+    }
+}
 
 /*确定尺寸*/
 .ruler-div{
@@ -204,11 +275,12 @@ select::-ms-expand { display: none; }/*无效*/
 .ruler-div-in{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 520px){
     .ruler-div-in{
         flex-direction: column;
+        align-items: flex-start;
     }
 }
 .input-wrapper{
@@ -222,7 +294,11 @@ select::-ms-expand { display: none; }/*无效*/
     flex-wrap: wrap;
 }
 .ruler-wrapper{
-    margin: 10px 10px 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 10px 40px 10px 0;
 }
 .ruler-input{
     margin:0 5px;
@@ -252,10 +328,13 @@ select::-ms-expand { display: none; }/*无效*/
     justify-content: center;
     align-items: center;
 }
-
+.info-div{
+    width: 100%;
+    margin: 0;
+    background-color: #e1dfdf;
+}
 .info-wrapper{
     padding: 30px 10%;
-    background-color: #e1dfdf;
 }
 .info-wrapper span{
     color:#999999;
