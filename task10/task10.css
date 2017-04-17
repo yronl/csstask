@@ -206,6 +206,7 @@ span.step-icon{
     justify-content: space-between;
     align-items: center;
     height:20px;
+    margin: 10px 0;
 }
 .wrapper-in{
     width:115px;
@@ -246,7 +247,7 @@ input[type='radio'].type-input:checked{
     width:120px;
     height: 34px;
     flex-shrink: 0;
-    margin: 10px 0;
+    margin-top:10px;
     padding-left:15px ;
     /*很关键：将默认的select选择框样式清除*/
     -moz-appearance:none;
