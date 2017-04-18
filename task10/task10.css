@@ -218,14 +218,21 @@ span.step-icon{
     width: 155px;
 }
 input[type='radio'].type-input{
+    width:18px;
+    height: 18px;
     display: inline-block;
     margin: 0;
+    border-radius: 18px;
+    border:1px solid #cccccc;
+    -webkit-appearance:none;
+    outline: 18px;
 }
 input[type='radio'].type-input:checked{
     width:18px;
     height: 18px;
     margin: 0;
     display: inline-block;
+    border:none;
     border-radius: 18px;
     -webkit-appearance:none;
     background: url("images10/radio.png") no-repeat scroll right center transparent;
