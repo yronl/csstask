@@ -437,6 +437,8 @@ table caption {
 }
 .underline-word2 {
   padding-bottom: 5px;
+}
+.underline-word2:hover {
   border-bottom: 1px solid white;
 }
 .wechat-platform {
